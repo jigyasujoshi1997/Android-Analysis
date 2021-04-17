@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/add_error"
+        style="@style/CategoryStyle1"
+        android:background="@color/category_numbers"
+        android:text="Add new Error"
+
+        />
+
+    <TextView
+        android:id="@+id/view_error"
+        style="@style/CategoryStyle1"
+        android:background="@color/category_family"
+        android:text="View All Errors"
+
+        />
+
+    <TextView
+        android:id="@+id/search_machine"
+        style="@style/CategoryStyle1"
+        android:background="@color/category_numbers"
+        android:text="Search a Machine By Id"
+
+        />
+
+    <TextView
+        android:id="@+id/search_error"
+        style="@style/CategoryStyle1"
+        android:background="@color/category_family"
+        android:text="Search Error" />
+
+    <TextView
+        android:id="@+id/pie_chart"
+        style="@style/CategoryStyle1"
+        android:background="@color/category_numbers"
+        android:text="Pie Chart" />
+
+
+</LinearLayout>

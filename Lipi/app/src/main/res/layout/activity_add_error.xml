@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".AddErrorActivity">
+    <!-- Error category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/error_code" />
+
+        <!-- Input fields -->
+        <!-- code field -->
+        <EditText
+            android:id="@+id/error_code"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_error_code"
+            android:inputType="textCapCharacters" />
+    </LinearLayout>
+
+    <!-- Error Description category -->
+    <LinearLayout
+        android:id="@+id/container_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/error_type" />
+
+        <!-- Input field -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <!-- Error drop-down spinner -->
+            <Spinner
+                android:id="@+id/error_description"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- error date-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/error_date" />
+
+        <EditText
+            android:id="@+id/error_date"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_error_date"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <!-- error time-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/error_time" />
+
+        <EditText
+            android:id="@+id/error_time"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_error_time"
+            android:inputType="time" />
+    </LinearLayout>
+
+    <!-- Machine category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/machine_id" />
+
+        <!-- Input fields -->
+        <!-- code field -->
+        <EditText
+            android:id="@+id/machine_name"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_machine_id"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <!-- Machine location -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/machine_location" />
+
+        <!-- Input fields -->
+        <!-- code field -->
+        <EditText
+            android:id="@+id/machine_location"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_machine_location"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+
+    <!-- installation date-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/installation_date" />
+
+        <EditText
+            android:id="@+id/installation_date"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_install_date"
+            android:inputType="date" />
+    </LinearLayout>
+</LinearLayout>
